@@ -13,10 +13,9 @@
     <h3>Word Analysis:</h3>
     <h4>Total count: {{ total_count }}</h4>
     <h4>Word Frequency:</h4>
-    <ul>
-      {% for word, value in words%}
-      <li>{{ word }}: {{ value }}</li>
-      {% endfor %}
-    </ul>
+
+    {% for word, value in words%}
+    <p>{{ word }} - {{ value }}</p>
+    {% endfor %}
   </body>
 </html>
