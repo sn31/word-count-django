@@ -8,9 +8,14 @@
   </head>
   <body>
     <h1>Count page</h1>
+    <h3>Original text:</h3>
+    <p>{{ fulltext }}</p>
+    <h3>Word Analysis:</h3>
+    <h4>Total count: {{ total_count }}</h4>
+    <h4>Word Frequency:</h4>
     <ul>
-      {% for pair in count_dict %}
-      <li>{{ pair }}</li>
+      {% for word, value in words%}
+      <li>{{ word }}: {{ value }}</li>
       {% endfor %}
     </ul>
   </body>
