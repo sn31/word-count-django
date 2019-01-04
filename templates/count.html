@@ -8,5 +8,10 @@
   </head>
   <body>
     <h1>Count page</h1>
+    <ul>
+      {% for pair in count_dict %}
+      <li>{{ pair }}</li>
+      {% endfor %}
+    </ul>
   </body>
 </html>
